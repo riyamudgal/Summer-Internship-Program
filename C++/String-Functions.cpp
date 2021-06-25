@@ -24,3 +24,6 @@ int main()
     cout<<str<<endl;
   
     cout<<"The length of the string is :"<<str.length()<<endl;
+    
+    return 0;
+}
