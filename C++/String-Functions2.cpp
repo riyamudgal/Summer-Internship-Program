@@ -1,3 +1,4 @@
+#copy
 #swap
 #toLower
 #toUpper
@@ -8,7 +9,17 @@ using namespace std;
 
 int main()
 {
-  string str,str2,str3,ch;
+    string str,str2,str3,ch;
+
+    getline(cin,str);                               // Taking string input using getline()
+    cout<<"The initial string is -> ";
+    cout<<str<<endl;
+	
+    char ch[80];
+    str1.copy(ch,13,0);                                   //// using copy() to copy elements into char array, 13 is length to be copied, 0 is position in string to start copying
+
+    cout<<"The new copied character array is -> ";
+    cout<<ch;
 cout<<"The 1st string before swapping is : ";
     cout<<str<<endl;
     cout<<"The 2nd string before swapping is : ";
