@@ -5,15 +5,15 @@ public:
         int prev=0;
         for(int i=s.length()-1;i>=0;i--)
         {
-            if(prev<=roman(s[i]))
-             ans+=roman(s[i]);
+            if(prev<=change(s[i]))
+             ans+=change(s[i]);
             else
-             ans-=roman(s[i]);
-            prev=roman(s[i]);
+             ans-=change(s[i]);
+            prev=change(s[i]);
         }
         return ans;
     }
-    int roman(char c)
+    int change(char c)
     {
     switch(c)
     {
