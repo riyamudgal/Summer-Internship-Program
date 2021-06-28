@@ -1,17 +1,17 @@
 class Solution {
 public:
     int romanToInt(string s) {
-         int ans=0;
+         int res=0;
         int prev=0;
         for(int i=s.length()-1;i>=0;i--)
         {
             if(prev<=change(s[i]))
-             ans+=change(s[i]);
+                res=change(s[i]);
             else
-             ans-=change(s[i]);
+                res-=change(s[i]);
             prev=change(s[i]);
         }
-        return ans;
+        return res;
     }
     int change(char c)
     {
