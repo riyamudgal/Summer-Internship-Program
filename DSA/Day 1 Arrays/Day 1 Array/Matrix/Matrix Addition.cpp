@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-   int r1,c1,r2,c2, i, j,k, A[5][5], B[5][5], C[5][5];
+   int r1,c1,r2,c2, i, j, A[5][5], B[5][5], C[5][5];
     cout << "Enter rows and column of matrix A : ";
     cin >> r1>> c1;
     cout << "Enter rows and column of matrix B : ";
