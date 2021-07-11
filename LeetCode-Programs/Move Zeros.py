@@ -8,8 +8,4 @@ class Solution:
             if i==0:
                 nums.remove(i)
                 nums.append(i)
-        return nums
-        
-        
-        
-#without returning anthing
+      
