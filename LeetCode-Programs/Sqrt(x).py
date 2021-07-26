@@ -12,7 +12,8 @@ class Solution:
     def mySqrt(self, x: int) -> int:
         start=0
         end=x
-        
+        if x<2:
+            return x
         while start<=end:
             mid=(start+end)//2
             
