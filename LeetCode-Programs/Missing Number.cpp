@@ -11,3 +11,10 @@ public:
         return ans;
     }
 };
+
+
+/*The accumulate method in c++ used to find the array sum. This function can be accessed from the numeric library in c++.
+
+Syntax
+accumulate(array_name , array_name+length , sum);
+*/
