@@ -11,5 +11,5 @@ class Solution:
                 
                 
                 
-#Here at first Zero id removed from the list then it is appended at the end of list
+#Here at first Zero is removed from the list then it is appended at the end of list
       
