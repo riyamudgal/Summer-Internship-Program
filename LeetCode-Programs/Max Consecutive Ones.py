@@ -3,12 +3,12 @@ class Solution:
         count=0
         ans=0
         for i in range(len(nums)):
-            if nums[i]==1:
+            if nums[i]!=0:
                 count=count+1
             else:
-                ans=max(ans,count)
                 count=0
+            ans=max(ans,count)
                 
-        ans=max(ans,count)
         return ans
+        
         
