@@ -5,4 +5,5 @@ public:
     }
 };
 
-//without using next_permutation
+//without using next_permutation function
+
