@@ -1,7 +1,6 @@
 class Solution:
     def largestPerimeter(self, nums: List[int]) -> int:
         '''nums.sort()
-        per=0
         if nums[0]+nums[1]>nums[2]:
             return nums[0]+nums[1]+nums[2]
         return 0
