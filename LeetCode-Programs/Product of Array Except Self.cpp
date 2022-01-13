@@ -15,7 +15,7 @@ public:
 
         return res;*/
         int n=nums.size();
-        vector<int> ans(n);
+        vector<int> res(n);
         vector<int> left(n);
         vector<int> right(n);
         
@@ -31,8 +31,8 @@ public:
         }
         for(int k=0;k<n;k++)
         {
-            ans[k]=left[k]*right[k];
+            res[k]=left[k]*right[k];
         }
-        return ans;
+        return res;
     }
 };
