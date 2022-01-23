@@ -16,3 +16,24 @@ public:
         return sum;
     }
 };
+
+
+
+
+
+
+
+
+//second
+class Solution {
+public:
+    int sumOfUnique(vector<int>& nums) {
+        vector<int> vec;
+        for(int i=0;i<nums.size();i++)
+        {
+            if(count(nums.begin(), nums.end(), nums[i])==1)
+                vec.push_back(nums[i]);
+        }
+        return accumulate(vec.begin(), vec.end(), 0);
+    }
+};
