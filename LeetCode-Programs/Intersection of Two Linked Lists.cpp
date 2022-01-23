@@ -30,8 +30,6 @@ public:
             ptr2=headA;
     }
         
-    return p1;
+    return ptr1;
 }
 };
-
-//second
