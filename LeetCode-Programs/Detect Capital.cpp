@@ -5,7 +5,7 @@ public:
         bool first = isupper(word[0]);
         
         for(int i=0;i<word.length();i++){
-            if(word[i]<=90 && word[i]>=65)
+            if(ord[i]>=65 && word[i]<=90)
                 count_u++;
        
             if(word[i]>=97 && word[i]<=122)
