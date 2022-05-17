@@ -6,6 +6,6 @@ class Solution:
                 count+=1
             else:
                 count=1
-            if count>len(arr)/4:
+            if count>len(arr)//4:
                 return arr[i]
         return arr[0]
