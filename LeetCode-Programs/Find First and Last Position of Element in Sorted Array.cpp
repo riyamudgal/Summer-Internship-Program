@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
-        int a,b, n=nums.size();
+        /*int a,b, n=nums.size();
         
         for(int i=0;i<n;i++)
         {
@@ -27,7 +27,7 @@ public:
                 b=-1;
             }
         }
-        if(nums.empty())             //Returns whether the vector is empty
+        if(nums.empty())
         {
             a=-1;
             b=-1;
@@ -36,5 +36,31 @@ public:
         nums.push_back(a);
         nums.push_back(b);
         return nums;
+        */
+        vector<int> vec;
+        int first=-1, last=-1, start=0, end=nums.size()-1;
+        while(start<=end){
+            int mid= start+ (end-start)/2;
+            if(nums[mid]<target)
+                start=mid+1;
+            else if(nums[mid]>target)
+                end=mid-1;
+            else if(nums[mid]==target){
+                //t temp=mid;
+                while(mid>0 && nums[mid-1]==target)
+                    mid--;
+                first=mid;
+                while(mid<nums.size()-1 && nums[mid+1]==target)
+                    mid++;
+                last=mid;
+                
+                vec.push_back(first);
+                vec.push_back(last);
+                return vec;
+            }
+        }
+        vec.push_back(-1);
+        vec.push_back(-1);
+        return vec;
     }
 };
